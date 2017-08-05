@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="textSignIn">LOGOWANIE</string>
+    <string name="editTextUserLogin" />
+    <string name="editTextUserPassword" />
+    <string name="buttonSignIn">ZALOGUJ</string>
+    <string name="userLogin">ID studenta</string>
+    <string name="userPassword">hasło</string>
+    <string name="password">hasło</string>
+    <string name="buttonWelfareOffice">Sprawy socjalne</string>
+    <string name="buttonCourseOfStudy">Tok studiów</string>
+    <string name="textWelfareTitle">SPRAWY SOCJALNE</string>
+    <string name="walfareNumber">walfareNumber</string>
+    <string name="walfareTime">walfareTime</string>
+    <string name="buttonWalfareCancel">ANULUJ</string>
+    <string name="currentNumber">currentNumber</string>
+    <string name="textStudy">TOK STUDIÓW</string>
+    <string name="userNumber">userNumber</string>
+    <string name="currentNumberStudy">currentNumber</string>
+    <string name="buttonCancelStudy">ANULUJ</string>
+    <string name="passwordUser">hasło</string>
+    <string name="textAvailableNumber">Dostępny numerek:</string>
+    <string name="availableNumber">89</string>
+    <string name="textCurrentNumber">Obsługiwany numerek:</string>
+    <string name="CurrentNumberStudy">23</string>
+    <string name="approveButtonStudy">ZATWIERDŹ</string>
+    <string name="cancelButtonStudy">ANULUJ</string>
+    <string name="availableNumberWelfareTitle">Dostepny numerek:</string>
+    <string name="availableNumberWelfare">134</string>
+    <string name="currentNumberWelfareTitle">10</string>
+    <string name="CurrentNumberWelfareTitle">Obsługiwany numerek:</string>
+    <string name="currentNumberWelfare">10</string>
+    <string name="approveButtonWelfare">ZATWIERDŹ</string>
+</resources>

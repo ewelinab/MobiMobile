@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.eb.project.StudyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textStudy"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:fontFamily="Helvetica"
+        android:textColor="#f0a248"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textAvailableNumber"
+        android:id="@+id/availableNumberStudyTitle"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/availableNumber"
+        android:id="@+id/availableNumberStudy"
+        android:textColor="#7d7d7d"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:layout_below="@+id/availableNumberStudyTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCurrentNumber"
+        android:id="@+id/currentNumberStudyTitle"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/CurrentNumberStudy"
+        android:id="@+id/currentNumberStudy"
+        android:layout_marginTop="29dp"
+        android:textColor="#305ca8"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/currentNumberStudyTitle"
+        android:layout_alignStart="@+id/availableNumberStudy" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/approveButtonStudy"
+        android:id="@+id/approveButtonStudy"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/cancelButtonStudy"
+        android:id="@+id/cancelButtonStudy"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick" />
+
+</RelativeLayout>
