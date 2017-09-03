@@ -63,8 +63,9 @@ public class StudyActivity extends AppCompatActivity implements android.view.Vie
             case R.id.approveButtonStudy:
                 reservedNumber = service.reserveNumber();
                 availableNumberStudy.setText(Integer.toString(reservedNumber));
-                availableNumberStudy.setTextColor(Color.rgb(168, 199, 62));
-                availableNumberStudyTitle.setText("Twój numerek:");
+                availableNumberStudy.setBackgroundColor(Color.rgb(254, 114, 100));
+                availableNumberStudyTitle.setText("Twój numer");
+                availableNumberStudyTitle.setTextColor(Color.rgb(255, 56, 35));
                 break;
             case R.id.cancelButtonStudy:
                 service.cancelNumber();

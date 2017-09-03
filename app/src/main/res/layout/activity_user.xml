@@ -10,24 +10,37 @@
     tools:context="com.example.eb.project.UserActivity">
 
     <Button
+        android:id="@+id/buttonWelfare"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:text="@string/buttonWelfareOffice"
-        android:id="@+id/buttonWelfare"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/button_welfare"
+        android:fontFamily="helvetica-light"
         android:onClick="onClick"
-        android:layout_marginTop="77dp"
+        android:text="@string/buttonWelfareOffice"
         android:textSize="25sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <Button
+        android:id="@+id/buttonStudies"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:text="@string/buttonCourseOfStudy"
-        android:id="@+id/buttonStudies"
+        android:background="@drawable/button_study"
+        android:fontFamily="helvetica-light"
         android:onClick="onClick"
+        android:text="@string/buttonCourseOfStudy"
         android:textSize="25sp"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/buttonWelfare"
         android:layout_alignStart="@+id/buttonWelfare"
-        android:layout_marginBottom="91dp" />
+        android:layout_marginTop="55dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Id studenta" />
+
 </RelativeLayout>

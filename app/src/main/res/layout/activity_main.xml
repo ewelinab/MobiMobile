@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,65 +11,72 @@
     tools:context="com.example.eb.project.MainActivity">
 
     <TextView
+        android:id="@+id/textSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/textSignIn"
-        android:id="@+id/textSignIn"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="65dp"
-        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/editTextUserLogin"
         android:layout_centerHorizontal="true"
-        android:textAlignment="center"
-        android:fontFamily="Helvetica"
-        android:layout_alignParentTop="true"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#e34c6f"
-        android:singleLine="false" />
+        android:layout_marginBottom="48dp"
+        android:fontFamily="helvetica-light"
+        android:singleLine="false"
+        android:text="@string/textSignIn"
+        android:textColor="#232323"
+        android:textSize="30sp" />
 
     <EditText
+        android:id="@+id/editTextUserLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextUserLogin"
-        android:layout_below="@+id/textSignIn"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="69dp"
         android:layout_alignParentEnd="true"
-        android:text="@string/editTextUserLogin"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="#ff6624"
+        android:fontFamily="Helvetica-light"
         android:hint="@string/userLogin"
         android:inputType="number"
-        android:fontFamily="Helvetica"
-        android:textColor="#e34c6f" />
+        android:singleLine="false"
+        android:text="@string/editTextUserLogin"
+        android:textColor="@android:color/black" />
 
     <EditText
+        android:id="@+id/editTextUserPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/editTextUserPassword"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:text="@string/editTextUserPassword"
-        android:hint="@string/passwordUser"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextUserLogin"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="#ff6624"
+        android:ems="10"
         android:fontFamily="Helvetica"
-        android:textColor="#e34c6f" />
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        android:singleLine="false"
+        android:text="@string/editTextUserPassword"
+        android:textColor="@android:color/black" />
 
     <Button
+        android:id="@+id/loginButton"
         android:layout_width="200dp"
         android:layout_height="75dp"
-        android:text="@string/buttonSignIn"
-        android:id="@+id/loginButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="61dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="Helvetica-light"
         android:onClick="onClick"
-        android:layout_alignParentEnd="false"
-        android:textSize="20sp"
-        android:textStyle="normal"
-        android:textColor="#000000"
-        android:background="#dcdddd"
         android:singleLine="false"
-        android:fontFamily="Helvetica" />
+        android:text="@string/buttonSignIn"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/logo_mobi_orange"
+        android:layout_alignEnd="@+id/textSignIn"
+        android:layout_alignStart="@+id/textSignIn" />
 </RelativeLayout>

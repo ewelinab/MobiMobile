@@ -60,8 +60,9 @@ public class WelfareActivity extends AppCompatActivity implements android.view.V
             case R.id.approveButtonWelfare:
                 reservedNumber = service.reserveNumber();
                 availableNumberWelfare.setText(Integer.toString(reservedNumber));
-                availableNumberWelfare.setTextColor(Color.rgb(232, 161, 57));
-                availableNumberWelfareTitle.setText("Twój numerek:");
+                availableNumberWelfare.setBackgroundColor(Color.rgb(104, 167, 194));
+                availableNumberWelfareTitle.setText("Twój numer");
+                availableNumberWelfareTitle.setTextColor(Color.rgb(104, 167, 194));
                 break;
             case R.id.welfareCancelButton:
                 service.cancelNumber();

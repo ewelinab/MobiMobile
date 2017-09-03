@@ -10,25 +10,33 @@
     tools:context="com.example.eb.project.StudyActivity">
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Id studenta" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/textStudy"
         android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:fontFamily="Helvetica"
-        android:textColor="#f0a248"
-        android:textStyle="bold" />
+        android:textSize="20sp"
+        android:fontFamily="Helvetica-light"
+        android:textColor="#000"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/availableNumberStudy" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textAvailableNumber"
         android:id="@+id/availableNumberStudyTitle"
-        android:layout_marginTop="54dp"
-        android:layout_below="@+id/textView2"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/availableNumberStudy"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -37,34 +45,42 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/availableNumber"
         android:id="@+id/availableNumberStudy"
-        android:textColor="#7d7d7d"
-        android:textStyle="bold"
+        android:textColor="#fff"
         android:textSize="50sp"
-        android:layout_below="@+id/availableNumberStudyTitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp" />
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="#B3ff7043"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/currentNumberStudyTitle"
+        android:layout_alignEnd="@+id/currentNumberStudyTitle"
+        android:layout_alignStart="@+id/currentNumberStudyTitle" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textCurrentNumber"
         android:id="@+id/currentNumberStudyTitle"
-        android:layout_centerVertical="true"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/currentNumberStudy"
         android:layout_centerHorizontal="true" />
 
     <TextView
+        android:id="@+id/currentNumberStudy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#929292"
+        android:padding="10dp"
         android:text="@string/CurrentNumberStudy"
-        android:id="@+id/currentNumberStudy"
-        android:layout_marginTop="29dp"
-        android:textColor="#305ca8"
-        android:textStyle="bold"
-        android:textSize="50sp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
         android:textIsSelectable="false"
-        android:layout_below="@+id/currentNumberStudyTitle"
-        android:layout_alignStart="@+id/availableNumberStudy" />
+        android:textSize="50sp"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/cancelButtonStudy"
+        android:layout_alignStart="@+id/currentNumberStudyTitle"
+        android:layout_alignEnd="@+id/currentNumberStudyTitle" />
 
     <Button
         android:layout_width="150dp"
@@ -73,7 +89,8 @@
         android:id="@+id/approveButtonStudy"
         android:layout_alignParentBottom="true"
         android:onClick="onClick"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_border"/>
 
     <Button
         android:layout_width="150dp"
@@ -82,6 +99,7 @@
         android:id="@+id/cancelButtonStudy"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:onClick="onClick" />
+        android:onClick="onClick"
+        android:background="@drawable/button_border" />
 
 </RelativeLayout>
